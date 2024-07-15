@@ -29,7 +29,7 @@ public class Test {
 
         //构造方法,过时
         //Integer i = new Integer(num);
-        System.out.println("用构造方法创建包装类对象，已过时:" + i);
+        //System.out.println("用构造方法创建包装类对象，已过时:" + i);
 
         //valuerof
         Integer i2 = Integer.valueOf(num);
