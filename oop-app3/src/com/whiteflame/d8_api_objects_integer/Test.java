@@ -28,7 +28,7 @@ public class Test {
         int num = 10;
 
         //构造方法,过时
-        Integer i = new Integer(num);
+        //Integer i = new Integer(num);
         System.out.println("用构造方法创建包装类对象，已过时:" + i);
 
         //valuerof
