@@ -4,56 +4,66 @@ import java.util.Arrays;
 
 public class Sort {
     public static void main(String[] args) {
-        int[] arr = {5, 2, 1, 3, 4, 2};
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
         System.out.println(Arrays.toString(arr));
 
-        //bubbleSortUp(arr, "up");
-        //bubbleSortUp(arr, "down");
-        //selectSort(arr, "up");
-        selectSort(arr, "down");
+        //bubbleSort(arr);
+        //selectionSort(arr);
+        //insertionSort(arr);
         System.out.println(Arrays.toString(arr));
 
 
     }
 
-    //冒泡排序（升序）
-    public static void bubbleSortUp(int[] arr, String style) {
+    //冒泡排序
+    public static void bubbleSort(int[] arr) {
+        boolean swapped;
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (style.equals("up")) {
-                    if (arr[j] > arr[j + 1]) {
-                        swap(arr, j, j + 1);
-                    }
-                } else if (style.equals("down")) {
-                    if (arr[j] < arr[j + 1]) {
-                        swap(arr, j, j + 1);
-                    }
+            swapped = false;
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    // 交换 arr[j] 和 arr[j+1]
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    swapped = true;
                 }
             }
+            // 如果没有发生交换，说明数组已经有序，可以提前结束
+            if (!swapped) break;
         }
     }
 
     //选择排序
-    public static void selectSort(int[] arr, String style) {
+    public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
+            int min_idx = i;//最小值index
             for (int j = i + 1; j < arr.length; j++) {
-                if (style.equals("up")) {
-                    if (arr[i] > arr[j]) {
-                        swap(arr, i, j);
-                    }
-                } else if (style.equals("down")) {
-                    if (arr[i] < arr[j]) {
-                        swap(arr, i, j);
-                    }
+                if (arr[j] < arr[min_idx]) {
+                    min_idx = j;
                 }
             }
+            int temp = arr[i];
+            arr[i] = arr[min_idx];
+            arr[min_idx] = temp;
         }
     }
 
-    // 交换整型数组中两个元素的位置
-    public static void swap(int[] arr, int index1, int index2) {
-        int temp = arr[index1];
-        arr[index1] = arr[index2];
-        arr[index2] = temp;
+    //插入排序
+    public static void insertionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
+            /* 将arr[i]插入到arr[0...i-1]中已经排序好的序列中 */
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
     }
+
+
+
 }
