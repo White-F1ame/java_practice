@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-01/api-01.iml" filepath="$PROJECT_DIR$/api-01/api-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-practice.iml" filepath="$PROJECT_DIR$/code-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enhanced-practice/enhanced-practice.iml" filepath="$PROJECT_DIR$/enhanced-practice/enhanced-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-app1/oop-app1.iml" filepath="$PROJECT_DIR$/oop-app1/oop-app1.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-app2/oop-app2.iml" filepath="$PROJECT_DIR$/oop-app2/oop-app2.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-app3/oop-app3.iml" filepath="$PROJECT_DIR$/oop-app3/oop-app3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regex/regex.iml" filepath="$PROJECT_DIR$/regex/regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/standard-practice/standard-practice.iml" filepath="$PROJECT_DIR$/standard-practice/standard-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
     </modules>
   </component>
 </project>
