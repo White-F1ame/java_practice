@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/api-01/api-01.iml" filepath="$PROJECT_DIR$/api-01/api-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-practice.iml" filepath="$PROJECT_DIR$/code-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-app/collection-app.iml" filepath="$PROJECT_DIR$/collection-app/collection-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection-map-stream-app/collection-map-stream-app.iml" filepath="$PROJECT_DIR$/collection-map-stream-app/collection-map-stream-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/enhanced-practice/enhanced-practice.iml" filepath="$PROJECT_DIR$/enhanced-practice/enhanced-practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-app1/oop-app1.iml" filepath="$PROJECT_DIR$/oop-app1/oop-app1.iml" />
